@@ -6,7 +6,7 @@ describe("filtering", ()=> {
     beforeEach( ()=> {
         cy.visit("http://todomvc-app-for-testing.surge.sh/")
         cy.get('.new-todo', {timeout: 6000}).type("Clean room{enter}")
-        cy.get('.new-todo', {timeout: 6000}).type("Learn JavaScript{enter}")
+        cy.get('.new-todo', {timeout: 6000}).type("Learn JavaScript{enter}")m
         cy.get('.new-todo', {timeout: 6000}).type("Use Cypress{enter}")
 
         cy.get(".todo-list li:nth-child(2) .toggle").click()
